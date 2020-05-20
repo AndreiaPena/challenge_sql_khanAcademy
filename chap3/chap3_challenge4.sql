@@ -45,9 +45,8 @@ ON persons.id = hobbies.person_id;
 
 
 SELECT a.fullname, b.fullname FROM friends
-    JOIN persons a
-    ON friends.person1_id = a.id
-    JOIN persons b
-    ON  friends.person2_id = b.id;
+JOIN persons a
+ON friends.person1_id = a.id
+JOIN persons b
+ON  friends.person2_id = b.id;
 
-SELECT * FROM villes_france_free WHERE ville_surface > (SELECT AVG(ville_surface) FROM villes_france_free)
