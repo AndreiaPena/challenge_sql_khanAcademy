@@ -19,7 +19,10 @@ INSERT INTO hobbies (person_id, name) VALUES (1, "coding");
 INSERT INTO hobbies (person_id, name) VALUES (2, "dancing");
 INSERT INTO hobbies (person_id, name) VALUES (2, "coding");
 INSERT INTO hobbies (person_id, name) VALUES (3, "skating");
-INSERT INTO hobbies (person_id, name) VALUES (3, "rowing");
+INSERT INT
+
+
+O hobbies (person_id, name) VALUES (3, "rowing");
 INSERT INTO hobbies (person_id, name) VALUES (3, "drawing");
 INSERT INTO hobbies (person_id, name) VALUES (4, "coding");
 INSERT INTO hobbies (person_id, name) VALUES (4, "dilly-dallying");
@@ -46,3 +49,5 @@ SELECT a.fullname, b.fullname FROM friends
     ON friends.person1_id = a.id
     JOIN persons b
     ON  friends.person2_id = b.id;
+
+SELECT * FROM villes_france_free WHERE ville_surface > (SELECT AVG(ville_surface) FROM villes_france_free)
